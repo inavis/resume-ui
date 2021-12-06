@@ -1,0 +1,564 @@
+<!DOCTYPE html>
+<!--HTML 5-->
+
+<html lang="en">
+
+  <head>
+
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    
+      
+      <!-- Font Awesome -->
+    <link
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"
+    rel="stylesheet"
+    />
+    <!-- Google Fonts -->
+    <link
+    href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap"
+    rel="stylesheet"
+    />
+    <!-- MDB -->
+    <link
+    href="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/3.6.0/mdb.min.css"
+    rel="stylesheet"
+    />
+      
+  <!-- <link rel="stylesheet" href="bootstrap.min.css"> -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css" integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
+  
+  
+  
+    <link rel = "stylesheet" href="style.css">  
+ 
+    <title>Resume</title>
+
+    <style>
+    .img{
+    border-radius: 100%;
+    width: 250px;
+    height: 270px;
+    /* border: 5px dotted rgba(252, 252, 8, 0.815); */
+    /* position: relative; */
+    border:7px dotted rgb(240, 173, 78);
+    }
+
+    .icon-bg{
+      border-radius: 100%;
+    width: 90px;
+    height: 90px;
+    background-color: gray;
+    }
+    .icon-border{
+      border-radius: 100%;
+    width: 105px;
+    height: 105px;
+      border:7px dotted rgb(240, 173, 78);
+      /* width: 200px;
+  height: 100px;
+  background: yellow;
+  text-align: center;
+  line-height: 100px;
+  background: linear-gradient(to right, orange 50%, rgba(255, 255, 255, 0) 0%), linear-gradient(blue 50%, rgba(255, 255, 255, 0) 0%), linear-gradient(to right, green 50%, rgba(255, 255, 255, 0) 0%), linear-gradient(red 50%, rgba(255, 255, 255, 0) 0%);
+  border-radius: 10%;
+  background-position: top, right, bottom, left;
+  background-repeat: repeat-x, repeat-y;
+  background-size: 35px 1px, 1px 35px; */
+    }
+
+    .block1 {
+    position: absolute;
+    top: 33%;
+    left: 0%;
+    height: 60px;
+}
+/* .block2 {
+    position: absolute;
+    top: 33%;
+    right: 0%;
+    height: 60px;
+} */
+
+.vr{
+  border-right: 3px solid gray;
+}
+
+.icon-color{
+  color: rgb(240, 173, 78);
+}
+.range{
+  width: 100%;
+  float: right;
+  border-radius: 25px;
+ /* outline: none; */
+ /* -webkit-appearance: none; */
+ /* background-color: rgb(240, 173, 78); */
+ /* background: linear-gradient(to right ,yellow,rgb(240, 173, 78),gray, rgb(211, 206, 206)); */
+ /* background: linear-gradient(to right, #82CFD0 0%, #82CFD0 70%, #fff 40%, #fff 100%);
+  border: solid 1px black;
+  outline: none;
+  -webkit-appearance: none; */
+}
+/* .caption{
+  position:absolute;
+    top: 30%;
+    left: 33.3%;
+} */
+
+@media (max-width: 500px) {
+  .caption{
+  position:absolute;
+    top: 30%;
+    left: 24%;
+    /* background-color: yellow; */
+    width: 55%;
+}
+.flex{
+  display: flex;
+  flex-direction: column;
+}
+  }
+@media (min-width: 501px) and (max-width: 650px) {
+  .caption{
+  position:absolute;
+    top: 30%;
+    left: 24%;
+    /* background-color: violet; */
+    width: 55%;
+}
+.flex{
+  display: flex;
+  flex-direction: row;
+}
+.subcon1{
+  border-right: 3px solid gray;
+
+}
+.headbg{
+  width: 600px;
+}
+  }
+  
+  /* /Tablet Devices */
+  @media (min-width: 651px) and (max-width: 800px) {
+    .caption{
+  position:absolute;
+    top: 30%;
+    left: 33%;
+    /* background-color: turquoise; */
+    width: 38%;
+}
+.flex{
+  display: flex;
+  flex-direction:row;
+}
+.subcon1{
+  border-right: 3px solid gray;
+}
+
+
+  }
+  
+  /* /Laptop devices/ */
+  
+  @media (min-width: 801px) and (max-width: 1000px) {
+    .caption{
+  position:absolute;
+    top: 30%;
+    left: 33%;
+    /* background-color: thistle; */
+    width: 38%;
+}
+.flex{
+  display: flex;
+  flex-direction: row;
+}
+.subcon1{
+  border-right: 3px solid gray;
+}
+  }
+  
+  /* Extra-Large Devices */
+  
+  @media (min-width: 1001px) {
+    .caption{
+  position:absolute;
+    top: 30%;
+    left: 33.3%;
+    /* background-color: red; */
+    width: 37%;
+}
+
+.flex{
+  display: flex;
+  flex-direction: row;
+}
+.subcon1{
+  border-right: 3px solid gray;
+}
+  }
+/* .arrange{
+  background-color: thistle;
+} */
+/*----------------------------------------------------------------------------*/
+/* @media (max-width:500px) {
+  .arrange{
+    background-color: thistle;
+    display: flex;
+    flex-direction: column;
+  }
+}
+@media (min-width: 501px) and (max-width:800px){
+  .arrange{
+    background-color: thistle;
+    display: flex;
+    flex-direction: column;
+  }
+}
+  
+@media (min-width: 801px) and (max-width: 1000px) {
+  .arrange{
+    display: flex;
+    flex-direction: row;
+    background-color: tomato;
+  }
+}
+  
+@media (min-width: 1001px) {
+  .arrange{
+    display: flex;
+    flex-direction: row;
+    background-color: tomato;
+  }
+} */
+  
+  
+    </style>
+  </head>
+
+  <body>
+
+<div class="container d-flex flex-column">
+  
+
+<!------------------------------------------------------------------------------>
+
+  <div class="fluid-container bg-dark" >
+ 
+    <div class="container">
+      <div class="  p-5 text-center">
+        <img src="pro-pic.jpg" alt="profile-picture" class="img"/>
+      </div>
+      <div class="row">
+        <div class="block1 bg-light text-center col-sm-12">
+          <p></p>
+      </div>
+  
+      <div class="caption  text-center text-white bg-warning">
+        <p class="display-4 p-2"><b>SIVANI S S</b></p>
+       </div>
+       <!-- <div class="col-sm-4 block2 bg-light text-center">
+         <p></p>
+       </div>
+     -->
+      </div>
+    </div>
+  
+  </div>
+
+
+<!------------------------------------------------------------------------------>
+
+
+
+
+
+
+
+<!------------------------------------------------------------------------------>
+<div>
+  <div class="headbg pt-3 pr-3 pl-3">
+    <div class=" d-flex flex-row">
+      <div class="col-sm-4 vr">
+        17,1st cross street, Dhanalakshmi nagar, chennai-600073
+      </div>
+      <div class="col-sm-2 vr">
+        +91 7358579242
+      </div>
+      <div class="col-sm-3 vr text-break">
+        rednaz.inavis@gmail.com
+      </div>
+      <div class="col-sm-3 text-break">
+        www.kickresume.com
+      </div>
+    </div>
+  </div>
+</div>
+<!------------------------------------------------------------------------------>
+
+
+
+<!------------------------------------------------------------------------------>
+<div class="fluid-container ml-3 mr-3">
+  <hr>
+</div>
+<!------------------------------------------------------------------------------>
+
+
+
+<!------------------------------------------------------------------------------>
+<div>
+  <div class="fluid-container">
+    <div class="flex">
+      <div class="col-sm-6 subcon1">
+        <div class="text-center p-4 d-flex flex-row arrange"> 
+          <div class="icon-border">
+            <div class="icon-bg display-5 text-center p-2"><i class="fas fa-user icon-color"></i></div> 
+          </div>
+          <div class="p-4 text-secondary"><h2>Profile</h2></div>
+        </div>
+        <div class="p-4">
+          An aspiring engineer having two years of experience and aiming to deliver superior performance with my innovative ideas , troubleshooting skills , management techniques  for the sustained growth of self and company.
+        </div>
+  
+        <div class="d-flex flex-row text-center p-4 arrange"> 
+          <div class="icon-border">
+            <div class="icon-bg display-5 text-center p-2"><i class="fas fa-flask icon-color"></i></div> 
+          </div>
+          <div class="p-4 text-secondary"><h2>Skills</h2></div>
+        </div>
+        <div class="text-center pb-4"><h4>Technical skills</h4></div>
+        <div class="container">
+          <div class="d-flex flex-row "> 
+            <div class="col-sm-4">Javascript</div>
+            <div class="col-sm-5"><input type="range" min="0" max="100" value="60"  class="form-control-range range"></div>
+          </div>
+        </div>
+        <div class="container">
+          <div class="d-flex flex-row "> 
+            <div class="col-sm-4">CSS</div>
+            <div class="col-sm-5"><input type="range" min="0" max="100" value="65" class="form-control-range range"></div>
+          </div>
+        </div>
+        <div class="container">
+          <div class="d-flex flex-row "> 
+            <div class="col-sm-4">HTML</div>
+            <div class="col-sm-5"><input type="range" min="0" max="100" value="70" class="form-control-range range"></div>
+          </div>
+        </div>
+        <div class="container">
+          <div class="d-flex flex-row "> 
+            <div class="col-sm-4">React</div>
+            <div class="col-sm-5"><input type="range"  min="0" max="100" value="10" class="form-control-range range"></div>
+          </div>
+        </div>
+        <div class="container">
+          <div class="d-flex flex-row "> 
+            <div class="col-sm-4">Redux</div>
+            <div class="col-sm-5"><input type="range" min="0" max="100" value="10" class="form-control-range range"></div>
+          </div>
+        </div>
+        <div class="container">
+          <div class="d-flex flex-row "> 
+            <div class="col-sm-4">Mongo</div>
+            <div class="col-sm-5"><input type="range" min="0" max="100" value="15"  class="form-control-range range"></div>
+          </div>
+        </div>
+        <div class="container">
+          <div class="d-flex flex-row "> 
+            <div class="col-sm-4">Deployment</div>
+            <div class="col-sm-5"><input type="range"  min="0" max="100" value="40" class="form-control-range range"></div>
+          </div>
+        </div>
+        <div class="text-center pt-4 pb-4"><h4>Additional skills</h4></div>
+        <div class="container">
+          <div class="d-flex flex-row "> 
+            <div class="col-sm-4">Project Management</div>
+            <div class="col-sm-5"><input type="range"  min="0" max="100" value="70" class="form-control-range range"></div>
+          </div>
+        </div>
+        <div class="container">
+          <div class="d-flex flex-row "> 
+            <div class="col-sm-4">Recruitment</div>
+            <div class="col-sm-5"><input type="range"  min="0" max="100" value="50" class="form-control-range range"></div>
+          </div>
+        </div>
+        <div class="container">
+          <div class="d-flex flex-row "> 
+            <div class="col-sm-4">Business development</div>
+            <div class="col-sm-5"><input type="range" min="0" max="100" value="80" class="form-control-range range"></div>
+          </div>
+        </div>
+        <div class="container">
+          <div class="d-flex flex-row "> 
+            <div class="col-sm-4">Editing</div>
+            <div class="col-sm-5"><input type="range" min="0" max="100" value="57" class="form-control-range range"></div>
+          </div>
+        </div>
+        <div class="container">
+          <div class="d-flex flex-row "> 
+            <div class="col-sm-4">fundraising</div>
+            <div class="col-sm-5"><input type="range" min="0" max="100" value="77" class="form-control-range range"></div>
+          </div>
+        </div>
+      
+  
+        <div class="d-flex flex-row text-center p-4 arrange"> 
+          <div class="icon-border">
+            <div class="icon-bg display-5 text-center p-2"><i class="fas fa-briefcase icon-color"></i></div> 
+          </div>
+          <div class="p-4 text-secondary"><h2>Work Experience</h2></div>
+        </div>
+        <div class="container">
+          <div class="d-flex flex-row">
+            <div class="col-sm-6 pl-5 ml-3">
+              <h5>System Engineer</h5>
+              <div>TCS,Chennai,TamilNadu</div>
+            </div>
+            <div class="col-sm-6">
+              <h6>12-08-2019 - current</h6>
+            </div>
+          </div>
+        </div>
+        <ul class="pr-5 pl-5 pb-5 pt-3">
+          <li>
+            Actifio (Backup and restore tool) : Completed five actifio certifications. Worked in deployment of the tool in VM and cloud platforms like AWS , Configuring backups for different platforms , Monitoring the backups and preparing daily reports, Performing troubleshooting operations.
+          </li>
+          <li>
+            Opsview (Network Monitoring tool) : Worked on deployment of the tool in linux VMs , Configuring  service checks for Windows VM, linux VM , mysql database , websites. Configured event handlers to restart a service when it goes down.
+          </li>
+          <li>
+            Completed basic training on Networking Switching and Routing.
+          </li>
+          <li>
+            Worked on Cisco Meraki on available devices , models , license types and implementing use cases
+          </li>
+          <li>
+            Worked on creating solutions/bill of materials  for data centers of various accounts based on their requirements.
+          </li>
+        </ul>
+      </div>
+  
+  
+  
+  
+  
+      <div class="col-sm-6">
+        <div class="d-flex flex-row text-center p-4 arrange"> 
+          <div class="icon-border">
+            <div class="icon-bg display-5 text-center p-2"><i class="fas fa-briefcase icon-color"></i></div> 
+          </div>
+          <div class="p-4 text-secondary"><h2>Work Experience</h2></div>
+        </div>
+        <div class="container">
+          <div class="d-flex flex-row">
+            <div class="col-sm-6 pl-5 ml-3">
+              <h5>Trainee</h5>
+              <div>Infosys,Mysore,Karnataka</div>
+            </div>
+            <div class="col-sm-6">
+              <h6>December 2019 – April 2019 </h6>
+            </div>
+          </div>
+        </div>
+        <ul class="pr-5 pl-5 pb-5 pt-3">
+          <li>	Developed an angular website which displays list of google contacts and youtube subscribers of the logged in google user and shows the common users and list of suggested channels to be followed and helps to keep track of users.</li>
+        </ul>
+  
+        <div class="d-flex flex-row text-center p-4 arrange"> 
+          <div class="icon-border">
+            <div class="icon-bg display-5 text-center p-2"><i class="fas fa-graduation-cap icon-color"></i></div> 
+          </div>
+          <div class="p-4 text-secondary"><h2>Education</h2></div>
+        </div>
+        <div class="container">
+          <div class="d-flex flex-row">
+            <div class="col-sm-6 pl-5 ml-3">
+              <h5>Computer Science and Engineering</h5>
+              <div>St.Joseph's college of Engineering ,Chennai,TamilNadu</div>
+            </div>
+            <div class="col-sm-6">
+              <h6>2015 - 2019 </h6>
+            </div>
+          </div>
+        </div>
+        <div class="pr-5 pl-5 pb-1 pt-3">Full day intensive program on concepts of Computer Science</div>
+        <ul class="pr-5 pl-5 pb-5 pt-3">
+          <li>
+            Inplant Training on Networking at BSNL Technologies, Chennai
+          </li>
+          <li>
+            Received Grade C in Business English by Cambridge English Language Assessment.
+          </li>
+          <li>
+            Completed NPTEL Online Certification for the course IMAD(Introduction to Modern Application and Development) with a score of 67%  in the period of June 2017 -Sep 2017
+          </li>
+          <li>
+            Completed <b>“Ultimate  AWS Certified Solutions Architect Associate 2021”</b> course from Udemy.
+          </li>
+          <li>
+            One of the three developers of a web app <b>‘BUGFIX’</b> which is a simple game based on debugging code where players can bid their points to attempt a question according on its difficulty.
+          </li>
+        </ul>
+  
+        <div class="container">
+          <div class="d-flex flex-row">
+            <div class="col-sm-6 pl-5 ml-3">
+              <h5>HSC</h5>
+              <div>Zion Matriculation Higher Secondary School</div>
+            </div>
+            <div class="col-sm-6">
+              <h6>2013 -Year of passing</h6>
+            </div>
+          </div>
+        </div>
+        <br>
+        <div class="container">
+          <div class="d-flex flex-row">
+            <div class="col-sm-6 pl-5 ml-3">
+              <h5>SSLC</h5>
+              <div>Zion Matriculation Higher Secondary School</div>
+            </div>
+            <div class="col-sm-6">
+              <h6>2015 -Year of passing</h6>
+            </div>
+          </div>
+        </div>
+  
+        <div class="d-flex flex-row text-center p-4 arrange"> 
+          <div class="icon-border">
+            <div class="icon-bg display-5 text-center p-2"><i class="fas fa-icons icon-color"></i></div> 
+          </div>
+          <div class="p-4 text-secondary"><h2>Hobbies</h2></div>
+        </div>
+        <ul class="pr-5 pl-5 pb-5 pt-1">
+          <li>Illustrations - <a href="https://dribbble.com/Inavis">MY WORKS</a></li>
+          <li>Numismatics</li>
+          <li>Cooking</li>
+        </ul>
+  
+      </div>
+    </div>
+  </div>
+</div>
+<!------------------------------------------------------------------------------>
+
+
+
+
+<!------------------------------------------------------------------------------>
+
+<!------------------------------------------------------------------------------>
+
+</div>
+</body>
+
+  <!--scrIPT FOR FONTAWSOME ICONS-->
+  <script src="https://kit.fontawesome.com/9c5e07f641.js" crossorigin="anonymous"></script>
+  <script src="./script.js"></script>
+
+</html>
+
